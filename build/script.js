@@ -86,7 +86,6 @@ function editEntry(targetId){
   let targetType = entryContainer[targetId].type;
   let targetAmount = entryContainer[targetId].amount;
   let targetTitle = entryContainer[targetId].title;
-  // console.log(entryContainer[targetId].title);
   if(targetType === "income"){
     incomeAmount.value = targetAmount;
     incomeTitle.value = targetTitle;
