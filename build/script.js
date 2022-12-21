@@ -132,7 +132,7 @@ function updateUI(){
   outcome = calculateTotal("expense", entryContainer);
   balance = Math.abs(calculateTotalBalance(income, outcome));
 
-  let sign = income >= outcome ? "#" : "-#";
+  let sign = income >= outcome ? "&#8358;" : "-&#8358;";
 
   balanceTotal.innerHTML = `<span>${sign}</span><p>${balance}</p>`
   incomeTotal.innerHTML = `<p>${income}</p>`
