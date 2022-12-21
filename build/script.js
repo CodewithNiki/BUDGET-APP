@@ -99,7 +99,7 @@ function editEntry(targetId){
 
 function budgetIn(e) {
   e.preventDefault();
-  if (incomeTitle.value === "" && incomeAmount.value === "")
+  if (incomeTitle.value === "" || incomeAmount.value === "")
     return;
 
   let income = {
@@ -114,7 +114,7 @@ function budgetIn(e) {
 
 function budgetOut(e) {
   e.preventDefault();
-  if (expenseTitle.value == "" && expenseAmount.value == "")
+  if (expenseTitle.value == "" || expenseAmount.value == "")
     return;
 
   let expense = {
